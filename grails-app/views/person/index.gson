@@ -1,0 +1,8 @@
+import test.json.Person
+
+model {
+	Iterable<Person> personList
+}
+
+json tmpl.person(personList ?: [])
+

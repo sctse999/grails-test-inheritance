@@ -1,0 +1,17 @@
+import test.json.Employee
+import test.json.Person
+
+model {
+	Person person
+}
+
+json {
+	if (person.instanceOf(Employee)) {
+		type 'employee'
+		name person.name
+		employeeNo person.employeeNo
+	} else {
+		type 'Person'
+		name person.name
+	}
+}

@@ -1,0 +1,7 @@
+import test.json.Person
+
+model {
+	Person person
+}
+
+json tmpl.person(person)
